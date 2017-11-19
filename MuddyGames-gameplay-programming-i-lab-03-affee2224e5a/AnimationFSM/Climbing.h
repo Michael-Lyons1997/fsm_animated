@@ -9,7 +9,9 @@ public:
 	Climbing() {};
 	~Climbing() {};
 	void idle(Animation* a);
-	void jumping(Animation* a);
+	void digging(Animation* a);
+	void hammering(Animation* a);
+	void swordsmanship(Animation* a);
 };
 
 #endif // !IDLE_H
