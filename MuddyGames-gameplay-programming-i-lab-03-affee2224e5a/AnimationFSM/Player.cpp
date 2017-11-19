@@ -37,22 +37,52 @@ void Player::handleInput(Input in)
 	case Input::Action::CLIMB:
 		std::cout << "Player climb" << std::endl;
 		m_animation.climbing();
+		m_animated_sprite.addFrame(sf::IntRect(3, 173, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(88, 173, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(173, 173, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(258, 173, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(343, 173, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(428, 173, 84, 84));
 		break;
 	case Input::Action::DIG:
 		std::cout << "Player dig" << std::endl;
 		m_animation.digging();
+		m_animated_sprite.addFrame(sf::IntRect(3, 343, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(88, 343, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(173, 343, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(258, 343, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(343, 343, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(428, 343, 84, 84));
 		break;
 	case Input::Action::HAMMER:
 		std::cout << "Player hammer" << std::endl;
 		m_animation.hammering();
+		m_animated_sprite.addFrame(sf::IntRect(3, 428, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(88, 428, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(173, 428, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(258, 428, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(343, 428, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(428, 428, 84, 84));
 		break; 
 	case Input::Action::JUMP:
 		std::cout << "Player jump" << std::endl;
 		m_animation.jumping();
+		m_animated_sprite.addFrame(sf::IntRect(3, 258, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(88, 258, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(173, 258, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(258, 258, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(343, 258, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(428, 258, 84, 84));
 		break;
 	case Input::Action::SWORD:
 		std::cout << "Player using sword" << std::endl;
 		m_animation.swordsmanship();
+		m_animated_sprite.addFrame(sf::IntRect(3, 88, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(88, 88, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(173, 88, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(258, 88, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(343, 88, 84, 84));
+		m_animated_sprite.addFrame(sf::IntRect(428, 88, 84, 84));
 		break;
 	default:
 		break;

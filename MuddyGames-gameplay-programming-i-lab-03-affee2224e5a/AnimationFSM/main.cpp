@@ -14,7 +14,8 @@ int main()
 
 	// Load a sprite to display
 	sf::Texture texture;
-	if (!texture.loadFromFile("assets\\grid.png")) {
+	if (!texture.loadFromFile("assets\\grid.png"))
+	{
 		DEBUG_MSG("Failed to load file");
 		return EXIT_FAILURE;
 	}
@@ -45,24 +46,24 @@ int main()
 				// Close window : exit
 				window.close();
 				break;
-			case sf::Event::KeyPressed:
-				if (sf::Keyboard::isKeyPressed(sf::Keyboard::C))
+			case sf::Event::TextEntered:
+				if (event.text.unicode == 99)
 				{
 					input.setCurrent(Input::Action::CLIMB);
 				}
-				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+				else if (event.text.unicode == 100)
 				{
 					input.setCurrent(Input::Action::DIG);
 				}
-				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::H))
+				else if (event.text.unicode == 104)
 				{
 					input.setCurrent(Input::Action::HAMMER);
 				}
-				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::J))
+				else if (event.text.unicode == 106)
 				{
 					input.setCurrent(Input::Action::JUMP);
 				}
-				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+				else if (event.text.unicode == 115)
 				{
 					input.setCurrent(Input::Action::SWORD);
 				}
