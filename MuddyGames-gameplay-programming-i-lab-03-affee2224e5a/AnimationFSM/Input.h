@@ -9,9 +9,12 @@ public:
 	enum Action
 	{
 		IDLE,
-		UP,
-		LEFT,
-		RIGHT
+		CLIMB,
+		DIG,
+		HAMMER,
+		JUMP,
+		SWORD
+
 	};
 
 	void setCurrent(Action);

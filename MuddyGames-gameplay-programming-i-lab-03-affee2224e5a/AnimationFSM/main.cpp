@@ -46,17 +46,25 @@ int main()
 				window.close();
 				break;
 			case sf::Event::KeyPressed:
-				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+				if (sf::Keyboard::isKeyPressed(sf::Keyboard::C))
 				{
-					input.setCurrent(Input::Action::LEFT);
+					input.setCurrent(Input::Action::CLIMB);
 				}
-				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
 				{
-					input.setCurrent(Input::Action::RIGHT);
+					input.setCurrent(Input::Action::DIG);
 				}
-				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::H))
 				{
-					input.setCurrent(Input::Action::UP);
+					input.setCurrent(Input::Action::HAMMER);
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::J))
+				{
+					input.setCurrent(Input::Action::JUMP);
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+				{
+					input.setCurrent(Input::Action::SWORD);
 				}
 				break;
 			default:

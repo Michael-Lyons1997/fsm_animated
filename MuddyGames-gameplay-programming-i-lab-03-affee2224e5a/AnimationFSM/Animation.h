@@ -23,10 +23,10 @@ public:
 	void idle();
 	void jumping();
 	void climbing();
+	void swordsmanship();
+	void digging();
+	void hammering();
 
-// Try uncommenting and comment the declaration above
-//private:
-//	class State* m_current;
 };
 
 #endif // !ANIMATION_H
