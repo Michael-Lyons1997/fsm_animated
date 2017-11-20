@@ -1,3 +1,5 @@
+//@author: Michael Lyons
+//Time taken: 6 hours
 #ifndef ANIMATION_H
 #define ANIMATION_H
 

@@ -1,3 +1,5 @@
+//@author: Michael Lyons
+//Time taken: 6 hours
 #ifndef IDLE_H
 #define IDLE_H
 

@@ -1,3 +1,5 @@
+//@author: Michael Lyons
+//Time taken: 6 hours
 #include <iostream>
 #include <Player.h>
 #include <Idle.h>

@@ -1,3 +1,5 @@
+//@author: Michael Lyons
+//Time taken: 6 hours
 #include "Swordsmanship.h"
 #include "Jumping.h"
 #include "Climbing.h"

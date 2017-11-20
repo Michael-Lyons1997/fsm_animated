@@ -1,3 +1,5 @@
+//@author: Michael Lyons
+//Time taken: 6 hours
 #include <Climbing.h>
 #include "Digging.h"
 #include "Hammering.h"

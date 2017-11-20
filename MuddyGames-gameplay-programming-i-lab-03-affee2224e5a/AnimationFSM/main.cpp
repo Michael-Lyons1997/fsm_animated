@@ -1,3 +1,5 @@
+//@author: Michael Lyons
+//Time taken: 6 hours
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include <AnimatedSprite.h>
@@ -46,24 +48,25 @@ int main()
 				// Close window : exit
 				window.close();
 				break;
+				//this event is used because character keys act differently to other keys, like arrow keys
 			case sf::Event::TextEntered:
-				if (event.text.unicode == 99)
+				if (event.text.unicode == 99) //decimal for lowercase c
 				{
 					input.setCurrent(Input::Action::CLIMB);
 				}
-				else if (event.text.unicode == 100)
+				else if (event.text.unicode == 100) //decimal for lowercase d
 				{
 					input.setCurrent(Input::Action::DIG);
 				}
-				else if (event.text.unicode == 104)
+				else if (event.text.unicode == 104) //decimal for lowercase h
 				{
 					input.setCurrent(Input::Action::HAMMER);
 				}
-				else if (event.text.unicode == 106)
+				else if (event.text.unicode == 106) //decimal for lowercase j
 				{
 					input.setCurrent(Input::Action::JUMP);
 				}
-				else if (event.text.unicode == 115)
+				else if (event.text.unicode == 115) //decimal for lowercase s
 				{
 					input.setCurrent(Input::Action::SWORD);
 				}

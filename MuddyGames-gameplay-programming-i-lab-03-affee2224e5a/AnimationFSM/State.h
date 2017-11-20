@@ -1,3 +1,5 @@
+//@author: Michael Lyons
+//Time taken: 6 hours
 #ifndef STATE_H
 #define STATE_H
 

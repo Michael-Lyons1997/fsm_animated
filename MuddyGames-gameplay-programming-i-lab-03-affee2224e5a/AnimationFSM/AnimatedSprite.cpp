@@ -1,3 +1,5 @@
+//@author: Michael Lyons
+//Time taken: 6 hours
 #include <AnimatedSprite.h>
 
 AnimatedSprite::AnimatedSprite() 

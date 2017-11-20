@@ -1,3 +1,5 @@
+//@author: Michael Lyons
+//Time taken: 6 hours
 #pragma once
 #include "State.h"
 class Swordsmanship : public State

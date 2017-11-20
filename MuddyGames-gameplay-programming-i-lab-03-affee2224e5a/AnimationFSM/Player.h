@@ -1,3 +1,5 @@
+//@author: Michael Lyons
+//Time taken: 6 hours
 #ifndef PLAYER_H
 #define PLAYER_H
 

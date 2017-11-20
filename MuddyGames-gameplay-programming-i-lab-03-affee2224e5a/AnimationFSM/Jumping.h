@@ -1,3 +1,5 @@
+//@author: Michael Lyons
+//Time taken: 6 hours
 #ifndef JUMPING_H
 #define JUMPING_H
 
