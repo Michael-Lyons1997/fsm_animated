@@ -31,6 +31,8 @@ int main()
 	animated_sprite.addFrame(sf::IntRect(343, 3, 84, 84));
 	animated_sprite.addFrame(sf::IntRect(428, 3, 84, 84));
 
+
+
 	// Setup the Player
 	Player player(animated_sprite);
 	Input input;
